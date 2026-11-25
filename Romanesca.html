@@ -1,0 +1,132 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13 - Marcas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            width: 700px;
+            height: 430px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 2px;
+            background-color: black;
+            border: 2px solid black;
+        }
+
+        .caja {
+            color: white;
+            font-size: 12px;
+            padding: 3px;
+        }
+
+        .rojo {
+            background-color: red;
+            grid-column: 1 / 10;
+            grid-row: 1 / 4;
+        }
+
+        .rojo2 {
+            background-color: red;
+            grid-column: 10 / 12;
+            grid-row: 1 / 2;
+        }
+
+        .azul {
+            background-color: blue;
+            grid-column: 12 / 13;
+            grid-row: 1 / 2;
+        }
+
+        .verde2 {
+            background-color: green;
+            grid-column: 10 / 11;
+            grid-row: 2 / 3;
+        }
+
+        .amarillo2 {
+            background-color: yellow;
+            grid-column: 11 / 13;
+            grid-row: 2 / 3;
+        }
+
+        .morado2 {
+            background-color: purple;
+            grid-column: 10 / 12;
+            grid-row: 3 / 4;
+        }
+
+        .gris2 {
+            background-color: gray;
+            grid-column: 12 / 13;
+            grid-row: 3 / 4;
+        }
+
+        .verde {
+            background-color: green;
+            grid-column: 1 / 5;
+            grid-row: 4 / 7;
+        }
+
+        .amarillo {
+            background-color: yellow;
+            grid-column: 5 / 13;
+            grid-row: 4 / 7;
+        }
+
+        .morado {
+            background-color: purple;
+            grid-column: 1 / 9;
+            grid-row: 7 / 9;
+        }
+
+        .gris {
+            background-color: gray;
+            grid-column: 9 / 13;
+            grid-row: 7 / 9;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="caja rojo">1</div>
+        <div class="caja rojo2">2</div>
+        <div class="caja azul">3</div>
+
+        <div class="caja verde2">4</div>
+        <div class="caja amarillo2">5</div>
+
+        <div class="caja morado2">6</div>
+        <div class="caja gris2">7</div>
+
+        <div class="caja verde">3</div>
+        <div class="caja amarillo">4</div>
+
+        <div class="caja morado">5</div>
+        <div class="caja gris">6</div>
+
+    </div>
+
+</body>
+</html>
+```
